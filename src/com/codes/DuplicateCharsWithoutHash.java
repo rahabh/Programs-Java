@@ -9,6 +9,7 @@ public class DuplicateCharsWithoutHash {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the string");
 		String sOriginal = sc.nextLine();
+		String sOriginalSmall = sOriginal.toLowerCase();
 		
 		int [] count = new int [noOfChars];
 		
@@ -16,16 +17,24 @@ public class DuplicateCharsWithoutHash {
 		
 		int i;
 		int total = 0;
-		for (i =0; i<=sOriginal.length()-1; i++ ) {
-			count[sOriginal.charAt(i)]++;
+		for (i =0; i<=sOriginalSmall.length()-1; i++ ) {
+			count[sOriginalSmall.charAt(i)]++;
 			
-			total =count[sOriginal.charAt(i)];
+			total =count[sOriginalSmall.charAt(i)];
 			
-			if ((!Character.isWhitespace(sOriginal.charAt(i)) && (total >1)))
+			if ((!Character.isWhitespace(sOriginalSmall.charAt(i)) && (total >1)))
 			{
-				System.out.println("count of " +sOriginal.charAt(i) + " is " + total );
+				System.out.println("count of " +sOriginalSmall.charAt(i) + " is " + total );
 			}
 		}
+		
+//		for (i =0; i<=sOriginalSmall.length()-1; i++ ) {
+//			if ((!Character.isWhitespace(sOriginalSmall.charAt(i)) && (total >1)))
+//			{
+//				System.out.println("count of " +sOriginalSmall.charAt(i) + " is " + total );
+//			}
+//		}
+
 	}
 	public static void main(String[] args) {
 		DuplicateCharsWithoutHash dg= new DuplicateCharsWithoutHash();
