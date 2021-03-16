@@ -62,6 +62,8 @@ public class NumberOfCharsToBeAnagrams {
 				}
 			}
 		}
+		count1 = str1.length()-hm1.size();
+		
 		for (Character c21 : ch2) {
 			if (hm.containsKey(c21)) {
 				System.out.println("c21 : " + c21);
@@ -77,7 +79,8 @@ public class NumberOfCharsToBeAnagrams {
 				}
 			}
 		}
-		System.out.println("count1 : " + count1);
+		//count1 += str2.length()- hm1.size();
+		System.out.println("count : " + count);
 		
 	}
 
