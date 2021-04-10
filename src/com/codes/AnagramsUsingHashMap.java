@@ -5,16 +5,16 @@ import java.util.Scanner;
 
 public class AnagramsUsingHashMap {
 	
-	private boolean isAnagram() {
+	private boolean isAnagram(String s1, String s2) {
 		
 		boolean result=false;
 	
-		Scanner sc= new Scanner (System.in);
-		System.out.println("Enter the first string");
-		String s1= sc.nextLine();
-		
-		System.out.println("Enter the second string");
-		String s2= sc.nextLine();
+//		Scanner sc= new Scanner (System.in);
+//		System.out.println("Enter the first string");
+//		String s1= sc.nextLine();
+//		
+//		System.out.println("Enter the second string");
+//		String s2= sc.nextLine();
 		
 		String s1a = s1.toLowerCase();
 		char[] ch1 = s1a.toCharArray();
@@ -54,8 +54,13 @@ public class AnagramsUsingHashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String str1 = "hitler woman";
+		String str2 ="woman hitler";
+		String str3 ="qwerty";
+		String str4 ="power";
 		AnagramsUsingHashMap anagramsUsingHashMap = new AnagramsUsingHashMap();
-		anagramsUsingHashMap.isAnagram();
+		anagramsUsingHashMap.isAnagram(str1,str2);
+		anagramsUsingHashMap.isAnagram(str3,str4);
 	}
 
 }

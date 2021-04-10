@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Armstrongs {
 	
-	static boolean armstrongNumber() {
+	static boolean armstrongNumber(int num) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter the number");
-		int num = sc.nextInt();
+//		System.out.println("Please enter the number");
+//		int num = sc.nextInt();
 		int len = String.valueOf(num).length();
 		int copyOfNum = num;
 		int sum =0;
@@ -35,7 +35,12 @@ public class Armstrongs {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Armstrongs.armstrongNumber();
+		int num1= 8208;
+		int num2= 54748;
+		int num3=123;
+		Armstrongs.armstrongNumber(num1);
+		Armstrongs.armstrongNumber(num2);
+		Armstrongs.armstrongNumber(num3);
 	}
 
 }
