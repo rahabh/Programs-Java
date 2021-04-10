@@ -11,14 +11,14 @@ public class IntPalindrome {
 		int num = sc.nextInt();
 		int rev = 0;
 		int temp = num;
-		while (num > 0)
+		while (temp > 0)
 		{
-			for (int i= 0; i<num; i++)
-			{
-				int rem = num % 10;
+//			for (int i= 0; i<num; i++)
+//			{
+				int rem = temp % 10;
 				rev = rev *10 + rem;
-				num = num/10;
-			}
+				temp = temp/10;
+//			 }
 		}
 		System.out.println("Reverse of " + num + " : " + rev);
 		if (temp == rev)

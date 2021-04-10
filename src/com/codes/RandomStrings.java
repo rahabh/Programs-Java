@@ -49,7 +49,8 @@ public class RandomStrings {
 		System.out.println(concats);
 		
 //		System.out.print("OTP: " + random.nextInt((9999)-100 + 1));
-		String otps = String.format("%04d", random.nextInt(9999));
+		int i = random.nextInt(999999);
+		String otps = String.format("%06d", i);
 		System.out.println(otps);
 	}
 

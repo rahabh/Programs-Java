@@ -18,7 +18,7 @@ public class NumberOfCharsToRemoveForAnagrams {
 		Arrays.fill(arr,0);
 		
 		for (int i=0; i<wrd1.length();i++) {
-			arr[wrd1.charAt(i) -'a']++;
+			arr[wrd1.charAt(i)-'a' ]++;
 		}
 		
 		for (int i=0; i<wrd2.length();i++) {
