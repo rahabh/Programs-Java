@@ -46,7 +46,7 @@ public class BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] num = {1,2,7,6,5,4,3};
+		int [] num = {1,2,7,6,5,4};
 		int [] num1 = {1,2,3,9};
 		BubbleSort bs = new BubbleSort();
 		bs.bSort(num);
