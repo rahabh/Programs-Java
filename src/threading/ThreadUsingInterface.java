@@ -50,6 +50,8 @@ public class ThreadUsingInterface {
 			e.printStackTrace();
 		}
 		t2.start();
+		
+		System.out.println(t1.getName());
+		System.out.println(t2.getName());
 	}
-
 }
