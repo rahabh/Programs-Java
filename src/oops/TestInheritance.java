@@ -7,7 +7,7 @@ class Animal {
 }
 
 class Dog extends Animal {
-	void bark() {
+	void eat() {
 		System.out.println("Child...");
 	}
 }
@@ -22,11 +22,11 @@ public class TestInheritance {
 		//Dog da = (Dog) new Animal();
 		Dog dd = new Dog();
 		
-		aa.eat();
+		//aa.eat();
 		ad.eat();
-		dd.bark();
-		dd.eat();
-		//da.bark();
+		//dd.eat();
+//		dd.eat();
+//		da.bark();
 	//	da.eat();
 		
 		/*
