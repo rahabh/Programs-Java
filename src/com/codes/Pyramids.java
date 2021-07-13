@@ -15,7 +15,7 @@ public class Pyramids {
 				+ "5. Inverted Half Pyramid Using Numbers Same In Row\n" + "6. Inverted Half Pyramid Using "
 				+ "Numbers Same In Column \n" + "7. Inverted And Half Pyramid Using Numbers Same In Column\n"
 				+ "8. Inverted And Half Pyramid Using Numbers Same In Row \n" + "9. Pyramid \n"
-				+ "10. Floyds Triangle \n" + "11. Inverted Pyramid \n" + "12. Two Inverted Pyramid");
+				+ "10. Floyds Triangle \n" + "11. Inverted Pyramid \n" + "12. Two Inverted Pyramid \n" + "13. Half pyramid using incremented numbers in column");
 		
 		boolean flag = true;
 
@@ -60,6 +60,13 @@ public class Pyramids {
 			case "12":
 				twoPyarmids();
 				break;
+			case "13" :
+//				1
+//				2 3
+//				4 5 6
+//				7 8 9 10
+				halfPyramidUsingIncrementedNumbersInColumn();
+				break;
 			default:
 				flag = false;
 				break;
@@ -67,6 +74,16 @@ public class Pyramids {
 		}
 	}
 
+	private void halfPyramidUsingIncrementedNumbersInColumn() {
+		int k =1;
+		for (int i = 1; i <= row; i++) {
+			for (int j = 1; j <=i; j++) {
+				System.out.print(k + " ");
+				k = k+1;
+			}
+			System.out.println();
+		}
+	}
 	private void twoPyarmids() {
 		for (int i = 1; i <= row; i++) {
 			for (int j = 1; j < row - i; j++) {
@@ -187,7 +204,9 @@ public class Pyramids {
 	private void halfPyramidUsingNumbersSameInColumn() {
 		for (int i = 1; i <= row; i++) {
 			for (int j = 1; j <= i; j++) {
-				System.out.print(j + " ");
+//				System.out.print(j + " ");
+				System.out.print(j +" ");
+				j= j+1;
 			}
 			System.out.println();
 		}
